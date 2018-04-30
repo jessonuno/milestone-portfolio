@@ -1,0 +1,1623 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Montserrat'; src: url('fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+/***** BASE STYLES *****/
+
+body, html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: #f45b69;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+h1 {
+    font-family: 'Alex Brush', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 9em;
+    font-weight:bold;
+    letter-spacing: 1px;
+    color: #43434E;
+    padding-top: 3%;
+    padding-bottom: 5px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #43434E;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 3%;
+}
+
+h5 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8%;
+    color: #43434E;
+    letter-spacing: 1.5px;
+}
+
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
+}
+
+.btn {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #f45b69;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 0.7em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+#hero .btn {
+  font-weight: normal;
+}
+
+.return {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f45b69;
+  border: none;
+  border-radius: 5px;
+  width: 160px;
+  height: 40px;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  text-align: center;
+  font-size: 0.7em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.return:hover {
+  background-color: #ccc;
+  color: pink;
+}
+
+#submit-btn {
+    margin: auto;
+    margin-top: 3%;
+}
+
+.navbar {
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8125em;
+    color: #f45b69;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.current {
+    color: #ccc;
+}
+
+/********** GRID *********/
+
+.full-width {
+    max-width: 90%;
+    margin: 5% auto;
+    padding-top: 5%;
+}
+
+/***** BANNER SECTION *****/
+
+#banner {
+    background: #fffaf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner h4 {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5em;
+    color: #43434E;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 1%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***** HEADER SECTION *****/
+
+#hero {
+    background: url('../img/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+#hero h1 {
+    width: 100%;
+    margin: 0;
+    line-height: 1;
+}
+
+#hero h2 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+#hero a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/***** MAIN SECTION *****/
+
+main {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    max-width: 960px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+#expertise {
+    text-align: center;
+    height: auto;
+}
+
+#expertise img {
+    text-align: center;
+    height: 80px;
+    margin-left: 0;
+}
+
+#expertise h3 {
+    font-family: 'Righteous', cursive;
+    color: #43434E;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#expertise h4 {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-left: 0px;
+    font-weight: bold;
+    color: #43434E;
+}
+
+#expertise p {
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+.third-width-one,
+.third-width-two,
+.third-width-three {
+    width: 90%;
+    margin: auto;
+    padding: 5%;
+}
+
+/***** HIRE ME SECTION *****/
+
+#hire-me {
+    background-color: #FFFAF0;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+  width: 80%;
+}
+
+#hire-me h1 {
+    font-family: 'Righteous', cursive;
+    color: #f45b69;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 5%;
+    margin-bottom: 0;
+}
+
+#hire-me p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #43434E;
+    width: 90%;
+    margin: auto;
+}
+
+/******* ABOUT PAGE *******/
+
+#my-photo {
+    width: 50%;
+}
+
+.service-item .btn {
+    margin-bottom: 3%;
+}
+
+.about-me {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    text-transform: none;
+    letter-spacing: normal;
+    margin: 3% auto;
+}
+
+#view-work-btn,
+#connect-btn {
+  margin: 5% 0;
+}
+
+/******* SERVICE PAGE *******/
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.service-grid {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 0;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.service-container img {
+    width: 20%;
+    margin: 2%;
+}
+
+.service-item h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+		font-size: 1.3em;
+}
+
+.service-item h4 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.service-para {
+    width: 80%;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.launch-item {
+    border-bottom: none;
+}
+
+.wrap {
+    display: inline-flex;
+    margin: 2%;
+}
+
+.numbercircle {
+    border-radius: 50%;
+    border: 2px solid #f45b69;
+    color: #f45b69;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.wrap h4 {
+	  font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.launch {
+    border-bottom: none;
+}
+
+/******** WORK PAGE ********/
+.work-container {
+  margin: auto;
+}
+
+.work-item {
+    width: 90%;
+    margin: auto;
+    text-align:center;
+    padding: 10% 0 10% 0;
+}
+
+.container {
+  position:relative;
+  width: 80%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-bottom: 5%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position:absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.item {
+  border-bottom: 1px solid #ccc;
+  padding: 10%;
+  margin: 0;
+}
+
+.work-item img {
+    width: 50%;
+    margin: auto;
+}
+
+.work-text h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h4.skills {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: 'Montserrat', sans-serif;
+    color: #b2c6cd;
+    font-weight: bold;
+}
+
+.work-text h5 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: none;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0;
+  color: #b2c6cd;
+  font-size: 0.9em;
+}
+
+.work-text {
+  width: 80%;
+  margin: auto;
+}
+
+#patatap-item {
+    border-bottom: none;
+}
+
+/***** RESOURCES Page *****/
+
+#resources-page {
+    width: 100%;
+    height: 500px;
+}
+
+/***** CONTACT Page *****/
+
+.form-section {
+    width: 98%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+}
+
+.form-section p {
+    font-size: 0.9em;
+}
+
+#connect-form {
+    width: 100%;
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+.input-sections {
+    width: 60%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+}
+
+#name,
+#email {
+    margin-bottom: 10px;
+}
+
+#website-url  {
+    margin-bottom:25px;
+}
+
+#message {
+    height: 200px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+/***** Holstee Manifesto Page *****/
+
+.holstee-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #fffaf0;
+}
+
+.work h4 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.2em;
+    color: #43434E;
+    text-transform: uppercase;
+    margin: 2%;
+    padding: 5% 0;
+    text-align: center;
+}
+
+.work {
+    border-bottom: none;
+    padding-top: 0;
+}
+
+#hm-full {
+    width: 65%;
+}
+
+.work a.return {
+  margin: 5% auto;
+}
+
+/***** Jubilee Austen Page *****/
+
+#ja-full {
+    width: 65%;
+}
+
+/***** Rogue Pickings Page *****/
+
+#rp-full {
+    width: 70%;
+    border: 1px solid #ccc;
+}
+
+/***** Business Cards Page *****/
+.carousel {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-indicators li {
+  background-color: #ccc;
+}
+
+.carousel-indicators .active {
+  background-color: #5b5b5b;
+}
+
+.carousel-inner {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-101 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+
+.fa-angle-right {
+  color: black;
+  font-size: 25px;
+}
+
+.fa-angle-left {
+  color: black;
+  font-size: 25px;
+}
+
+.business-return-btn {
+  margin-bottom: 10%;
+  font-weight: normal;
+}
+
+#business {
+    display: inline-block;
+    text-align: center;
+}
+
+#business .btn {
+    margin: auto;
+    margin-top: 3%;
+}
+
+/***** FOOTER SECTION *****/
+
+footer {
+    width: 100%;
+    background-color: #f45b69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#footer-logo {
+    width: 50px;
+}
+
+footer h6 {
+    color: #fff;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  /* Tablet styles here! */
+
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+        max-width: none;
+        padding: 0;
+    }
+
+    .full-width {
+        padding-top: 0;
+    }
+
+    .third-width-one {
+        margin-top: 5%;
+    }
+
+    .btn {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 8%;
+    }
+
+    #expertise {
+        width: 96%;
+        margin: auto;
+    }
+
+    #expertise h3 {
+        font-size: 1.7em;
+    }
+
+    #hero h1 {
+        width: 100%;
+        margin: 0;
+        padding-top: 2%;
+        padding-bottom: 0;
+    }
+
+    #hero h2 {
+        margin: auto;
+        margin-bottom: 3%;
+    }
+
+    #hire-me {
+        background-color: #fffaf0;
+        width: 100%;
+    }
+
+    #hire-me h1 {
+        font-size: 1.5em;
+        padding-top: 0;
+        padding-bottom: 3%;
+        margin-bottom: 0;
+    }
+
+    /***** ABOUT PAGE *****/
+
+    #my-photo {
+        width: 40%;
+        margin: 0 0 0 0;
+    }
+
+    .about-item {
+        border-bottom: none;
+    }
+
+    #connect-btn {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .btn-item {
+        display: inline-flex;
+    }
+
+    #info {
+        padding: 5% 0;
+    }
+
+    /****** SERVICE PAGE *******/
+
+    .service-container {
+        width: 96%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .service-grid {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+
+    .service-item h3 {
+        font-size: 1.3em;
+    }
+
+    .service-container img {
+        width: 20%;
+    }
+
+    .launch-item {
+        border-bottom: none;
+    }
+
+    .launch {
+        border-bottom: none;
+    }
+
+    /******** WORK PAGE **********/
+
+    .work-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-container img {
+        width: 50%;
+        padding-bottom: 5%;
+        margin: auto;
+    }
+
+    .item {
+        width: 40%;
+        flex-wrap: nowrap;
+        padding: 10% 0;
+        margin: 0 3%;
+    }
+
+    .item h4 {
+        font-size: 0.9em;
+    }
+
+    .service-item h4 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .work-text h3 {
+        font-size: 1.5em;
+    }
+
+    h4.skills {
+        font-size: 0.9em;
+    }
+
+    .work-text h5 {
+        font-size: 1em;
+    }
+
+    #patatap-item {
+        border-bottom: none;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position:absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    /******* CONTACT PAGE *******/
+
+    .form-section p {
+        font-size: 1em;
+        margin-bottom: 4%;
+    }
+
+    /********** Holstee Manifesto **********/
+
+    .holstee-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /******* Rogue Pickings *******/
+
+    #rp-full {
+        width: 60%;
+    }
+
+    /******* Business Cards *******/
+
+    .carousel {
+        margin-bottom: 5%;
+    }
+}
+
+
+
+
+
+@media (min-width: 940px) {
+  /* Desktop styles here! */
+
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    nav ul li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.8125em;
+        color: #f45b69;
+        padding: 28px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    nav ul li a:hover {
+        color: #ccc;
+        text-decoration: none;
+    }
+
+/***** BANNER SECTION *****/
+
+    #banner {
+        background: #fffaf0;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        height: 65px;
+    }
+
+    #banner h4 {
+        width: 100%;
+        padding-left: 5%;
+        font-size: 1.8em;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+    }
+
+/***** HEADER SECTION *****/
+    #resources {
+        display: block;
+    }
+
+    #hero {
+        background: url('../img/hero-image.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+        max-width: none;
+        padding: 0;
+    }
+
+    #hero h1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #hero h2 {
+        margin-top: 0;
+    }
+
+    #hero h1 h2 a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a.return {
+        margin: 2% auto;
+        font-weight: normal;
+				text-decoration: none;
+    }
+
+    .return:hover {
+        color: #fff;
+        transition: 0.5s;
+    }
+
+
+    .form-section .btn {
+        margin-top: 0;
+    }
+
+/***** MAIN SECTION *****/
+
+    #expertise {
+        text-align: center;
+        margin: 0 auto;
+        height: auto;
+        max-width: 960px;
+    }
+
+    #expertise h3 {
+        font-family: 'Righteous', cursive;
+        color: #43434E;
+        font-size: 2em;
+        text-transform: uppercase;
+        padding: 2% 2%;
+        margin: 0 2%;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+
+    #expertise img {
+        text-align: center;
+        height: 80px;
+        margin-left: 0px;
+    }
+
+    .third-width-one,
+    .third-width-two,
+    .third-width-three {
+        width: 30%;
+        display: inline-block;
+        padding: 1.5%;
+    }
+
+    .third-width-three {
+        margin-bottom: 0;
+    }
+
+/***** HIRE ME SECTION *****/
+
+    #hire-me {
+        height: auto;
+        padding: 5% 0;
+    }
+
+    #hire-me h1 {
+        padding-top: 0;
+    }
+
+/***** ABOUT PAGE *****/
+
+    .about-me {
+        width: 100%;
+        text-align: left;
+        margin: 0 3% 3% 3%;
+    }
+
+    #view-work-btn,
+    #connect-btn {
+        margin: 0;
+    }
+
+    #view-work-btn {
+        margin-right: 3%;
+    }
+
+    .btn-item {
+        width: 100%;
+        display: inline-flex;
+    }
+
+    #photo {
+        padding: 0;
+    }
+
+    #my-photo {
+        width: 50%;
+    }
+
+    .about-container {
+      height: 600px;
+    }
+
+
+/***** SERVICE PAGE *****/
+
+    .service-container {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-wrap: nowrap;
+    }
+
+    .service-grid {
+        width: 98%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .service-item {
+        width: 33%;
+        border-bottom: none;
+        padding: 4%;
+    }
+
+    .service-para {
+        width: 100%;
+    }
+
+    hr {
+        width: 0;
+        display: none;
+    }
+
+    .form-section {
+        width: 70%;
+    }
+
+    .about-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-top: 0;
+    }
+
+    .about-item {
+        width: 60%;
+        margin: 0;
+    }
+
+    .service-container img {
+        width: 30%;
+    }
+
+    #photo {
+        width: 30%;
+        border-bottom: none;
+    }
+
+/***** WORK PAGE *****/
+
+  .work-container img {
+    width: 40%;
+    margin: 3%;
+    padding: 0;
+  }
+
+  .work-item {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 5%;
+  }
+
+  .work-text {
+    width:50%;
+    margin: 0 5%;
+  }
+
+  .work-text h3 {
+    font-size: 2em;
+    text-align: left;
+  }
+
+  h4.skills {
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+  .work-text h5 {
+    text-align: left;
+  }
+
+  #patatap-item {
+    padding-bottom: 0;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position:absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .work-hr {
+    display: block;
+    width: 90%;
+  }
+
+/***** RESOURCES Page *****/
+
+    #resources-page {
+      height: 600px;
+    }
+
+
+/***** CONTACT Page *****/
+
+    form {
+        width: 70%;
+        margin: auto;
+    }
+
+    .input-sections {
+        width: 50%;
+    }
+
+    .form-section h3 {
+        font-size: 1.5em;
+    }
+
+    .form-section p {
+        margin-bottom: 2%;
+    }
+
+    .idea, .sketch, .style {
+        padding-bottom: 2%;
+    }
+
+    #name {
+        margin-bottom: 10px;
+    }
+
+    #email {
+        margin-bottom: 10px;
+    }
+
+    #website-url  {
+        margin-bottom:25px;
+    }
+
+    #message {
+        height: 200px;
+    }
+
+/***** Holstee Manifesto Page *****/
+
+    .work {
+        width: 96%;
+        padding-top: 0;
+    }
+
+    .work h4 {
+        font-size: 2.5em;
+        padding-bottom: 0;
+    }
+
+    #hm-full, #ja-full {
+        width: 40%;
+    }
+
+
+/***** Jubilee Austen Page *****/
+
+
+
+/***** Rogue Pickings Page *****/
+
+
+
+/***** Business Cards Page *****/
+    .carousel {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-bottom: 3%;
+    }
+
+    .carousel-indicators li {
+      background-color: #ccc;
+    }
+
+    .carousel-indicators .active {
+      background-color: #5b5b5b;
+    }
+
+    .carousel-inner {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .w-101 {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    .fa-angle-right {
+      color: black;
+      font-size: 25px;
+    }
+
+    .fa-angle-left {
+      color: black;
+      font-size: 25px;
+    }
+
+    footer {
+        padding: 3% 0;
+    }
+}
+
+
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

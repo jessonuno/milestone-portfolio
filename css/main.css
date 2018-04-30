@@ -1,0 +1,1300 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Montserrat'; src: url('fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+/***** BASE STYLES *****/
+
+body, html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    font-weight: bold;
+    color: #f45b69;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+h1 {
+    font-family: 'Alex Brush', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 9em;
+    font-weight:bold;
+    letter-spacing: 1px;
+    color: #43434E;
+    padding-top: 3%;
+    padding-bottom: 5px;
+    margin: 0px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.875em;
+    letter-spacing: 5px;
+    color: #43434E;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8%;
+    color: #43434E;
+    letter-spacing: 1.5px;
+}
+
+.btn {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #f45b69;
+    border: none;
+    border-radius: 0;
+    width: 200px;
+    height: 40px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+input.button {
+    background-color: #fff;
+}
+
+#submit-btn {
+    margin: auto;
+    margin-top: 3%;
+}
+
+/********** GRID *********/
+
+.full-width {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.third-width {
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+}
+
+.two-third-width {
+    width: 66.66667%;
+    float: right;
+}
+
+/***** BANNER SECTION *****/
+
+#banner {
+    background: #fffaf0;
+}
+
+#banner h4 {
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+    color: #43434E;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 1%;
+}
+
+/***** HEADER SECTION *****/
+
+.main-header {
+    width: 100%;
+    margin: auto;
+}
+
+#nav-bar {
+    width: 100%;
+}
+
+#logo {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+nav {
+    width: 100%;
+    background-color: #f45b69;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+.current {
+    color: #ccc;
+}
+
+#resources {
+    display: none;
+}
+
+#hero {
+    background: url('../img/hero-image.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+#hero h1 {
+    width: 100%;
+    margin: 0;
+    line-height: 1;
+}
+
+#hero h2 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+#hero a {
+    text-decoration: none;
+}
+
+/***** MAIN SECTION *****/
+
+main {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    max-width: 960px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+#expertise {
+    text-align: center;
+    height: auto;
+}
+
+#expertise img {
+    text-align: center;
+    height: 80px;
+    margin-left: 0;
+}
+
+#expertise h3 {
+    font-family: 'Righteous', cursive;
+    color: #43434E;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#expertise h4 {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+    margin-left: 0px;
+    font-weight: bold;
+    color: #43434E;
+}
+
+#expertise p {
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+.third-width-one,
+.third-width-two,
+.third-width-three {
+    width: 90%;
+    margin: auto;
+}
+
+.third-width-three {
+    margin-bottom: 5%;
+}
+
+/***** HIRE ME SECTION *****/
+
+#hire-me {
+    background-color: #FFFAF0;
+    padding-bottom: 5%;
+    width: 100%;
+    margin:auto;
+    padding-top: 3%;
+}
+
+#hire-me h1 {
+    font-family: 'Righteous', cursive;
+    color: #f45b69;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#hire-me p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    color: #43434E;
+    width: 90%;
+    margin: auto;
+}
+
+/******* ABOUT PAGE *******/
+
+#my-photo {
+    width: 50%;
+    margin: 5%;
+}
+
+.service-item .btn {
+    margin-bottom: 3%;
+}
+
+.about-me {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-top: 0;
+}
+
+#info {
+    border-bottom: none;
+}
+
+/******* SERVICE PAGE *******/
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.service-grid {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+    margin: 2%;
+}
+
+.service-container img {
+    width: 20%;
+    margin: 2%;
+}
+
+.service-item h3 {
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.service-item h4 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.service-para {
+    text-align: center;
+}
+
+.launch-item {
+    border-bottom: none;
+}
+
+.wrap {
+    display: inline-flex;
+    margin: 2%;
+}
+
+.numbercircle {
+    border-radius: 50%;
+    border: 2px solid #f45b69;
+    color: #f45b69;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+}
+
+.launch {
+    border-bottom: none;
+}
+
+/******** WORK PAGE ********/
+
+.item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4%;
+}
+
+.item img {
+    width: 35%;
+}
+
+#magic-item {
+    border-bottom: none;
+}
+
+h4.skills {
+    font-weight: lighter;
+}
+
+/***** RESOURCES Page *****/
+
+#resources-page {
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***** CONTACT Page *****/
+
+.form-section {
+    width: 98%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+#connect-form {
+    width: 100%;
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+.input-sections {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+}
+
+#name,
+#email {
+    margin-bottom: 10px;
+}
+
+#website-url  {
+    margin-bottom:25px;
+}
+
+#message {
+    height: 200px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+/***** Holstee Manifesto Page *****/
+
+.holstee-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #fffaf0;
+}
+
+.work h4 {
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+    color: #43434E;
+    text-transform: uppercase;
+    margin: 2%;
+    text-align: center;
+}
+
+.work {
+    border-bottom: none;
+}
+
+#hm-full {
+    width: 65%;
+}
+
+/***** Jubilee Austen Page *****/
+
+#ja-full {
+    width: 65%;
+}
+
+/***** Rogue Pickings Page *****/
+
+#rp-full {
+    width: 70%;
+}
+
+/***** Business Cards Page *****/
+
+#bc {
+    width: 30%;
+    border: 1px solid #808080;
+}
+
+#bc-back {
+    width: 30%;
+    border: none;
+}
+
+#business {
+    display: inline-block;
+    text-align: center;
+}
+
+#business .btn {
+    margin: auto;
+    margin-top: 3%;
+}
+
+/***** FOOTER SECTION *****/
+
+footer {
+    width: 100%;
+    border-top: 3px solid #ccc;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  /* Tablet styles here! */
+
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+        max-width: none;
+        padding: 0;
+    }
+
+    .btn {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 8%;
+    }
+
+    #expertise {
+        width: 96%;
+        margin: auto;
+    }
+
+    #hero h1 {
+        width: 100%;
+        margin: 0;
+        padding-top: 2%;
+        padding-bottom: 0;
+    }
+
+    #hero h2 {
+        margin: auto;
+        margin-bottom: 3%;
+    }
+
+    #hire-me {
+        background-color: #fffaf0;
+        width: 100%;
+    }
+
+    /***** ABOUT PAGE *****/
+
+    #my-photo {
+        width: 40%;
+    }
+
+    .about-item {
+        border-bottom: none;
+    }
+    
+    #photo {
+        border-bottom: 1px solid #ccc;
+    }
+    
+    #view-work-btn {
+        margin: 0;
+    }
+    
+    #connect-btn {
+        margin-top: 3%;
+    }
+
+    /****** SERVICE PAGE *******/
+
+    .service-container {
+        width: 96%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .service-grid {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+    }
+
+    .service-container img {
+        width: 18%;
+    }
+    
+    .launch-item {
+        border-bottom: none;
+    }
+
+    .launch {
+        border-bottom: none;
+    }
+
+    /******** WORK PAGE **********/
+
+    .work-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item {
+        width: 40%;
+        flex-wrap: nowrap;
+    }
+
+    .service-item h4 {
+        text-align: center;
+    }
+
+    #cat-item,
+    #magic-item {
+        border-bottom: none;
+    }
+
+    /******* CONTACT PAGE *******/
+
+    /********** Holstee Manifesto **********/
+
+    .holstee-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /******* Rogue Pickings *******/
+
+    #rp-full {
+        width: 60%;
+    }
+
+    /******* Business Cards *******/
+
+    #bc-back {
+        width: 30%;
+    }
+}
+
+
+
+
+
+@media (min-width: 940px) {
+  /* Desktop styles here! */
+
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+/***** BANNER SECTION *****/
+
+    #banner h4 {
+        text-align: left;
+        padding-left: 5%;
+    }
+
+/***** HEADER SECTION *****/
+
+    .main-header {
+        width: 96%;
+        max-width: 960px;
+        margin: auto;
+        padding: 0;
+    }
+
+    #logo {
+        width: 10%;
+        float: left;
+        padding: 15px;
+    }
+
+    nav {
+        width: 70%;
+        float: right;
+        background-color: transparent;
+        top: 20px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        float: left;
+        border: none;
+        position: relative;
+        top: 10px;
+    }
+
+    nav ul li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.8125em;
+        color: #f45b69;
+        padding: 28px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    #resources {
+        display: block;
+    }
+
+    #hero {
+        background: url('../img/hero-image.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+        max-width: none;
+        padding: 0;
+    }
+
+    #hero h1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #hero h2 {
+        margin: 0;
+    }
+
+
+    #hero h1 h2 a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a.btn {
+        margin: 0;
+        margin-top: 3%;
+    }
+
+    .form-section .btn {
+        margin-top: 0;
+    }
+
+/***** MAIN SECTION *****/
+
+    #expertise {
+        text-align: center;
+        margin: 0 auto;
+        height: auto;
+        max-width: 960px;
+        padding: 1%;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
+
+    #expertise h3 {
+        font-family: 'Righteous', cursive;
+        color: #43434E;
+        font-size: 3.125em;
+        text-transform: uppercase;
+        padding: 2% 2%;
+        margin: 0 2%;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+
+    #expertise img {
+        text-align: center;
+        height: 80px;
+        margin-left: 0px;
+    }
+
+    .third-width-one, 
+    .third-width-two, 
+    .third-width-three {
+        width: 30%;
+        display: inline-block;
+        padding: 1.5%;
+    }
+
+    .third-width-three {
+        margin-bottom: 0;
+    }
+
+/***** HIRE ME SECTION *****/
+
+    #hire-me {
+        height: auto;
+        padding-bottom: 3%;
+    }
+
+    #hire-me h1 {
+        padding-top: 0;
+    }
+
+/***** ABOUT PAGE *****/
+    
+    .about-me {
+        width: 100%;
+        text-align: left;
+        margin: 7% 3% 3% 3%;
+    }
+    
+    #view-work-btn, 
+    #connect-btn {
+        margin: 0;
+    }
+    
+    #view-work-btn {
+        margin-right: 3%;
+    }
+   
+    .btn-item {
+        width: 100%;
+        display: inline-flex;
+    }
+    
+
+/***** SERVICE PAGE *****/
+
+    .service-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-wrap: nowrap;
+    }
+    
+    .about-container {
+        margin-bottom: 5%;
+    }
+
+    .service-grid {
+        width: 98%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .service-item {
+        width: 25%;
+        border-bottom: none;
+    }
+    
+    .about-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    
+    .about-item {
+        width: 60%;
+        margin: 0;
+    }
+    
+    #photo {
+        width: 30%;
+        border-bottom: none;
+    }
+    
+    #my-photo {
+        width: 60%;
+    }
+
+/***** WORK PAGE *****/
+
+    .item {
+        width: 33%;
+        margin: 0;
+        margin-top: 3%;
+    }
+
+    .item h4 {
+        font-size: 0.9em;
+        font-weight: lighter;
+    }
+
+    .work-container img {
+        width: 45%;
+    }
+
+    .work-grid {
+        margin-bottom: 5%;
+    }
+
+/***** RESOURCES Page *****/
+
+
+
+/***** CONTACT Page *****/
+
+    form {
+        width: 70%;
+        margin: auto;
+    }
+
+    #name {
+        margin-bottom: 10px;
+    }
+
+    #email {
+        margin-bottom: 10px;
+    }
+
+    #website-url  {
+        margin-bottom:25px;
+    }
+
+    #message {
+        height: 200px;
+    }
+
+/***** Holstee Manifesto Page *****/
+
+    .work {
+        width: 96%;
+    }
+
+    .work h4 {
+        font-size: 3em;
+    }
+
+
+/***** Jubilee Austen Page *****/
+
+
+
+/***** Rogue Pickings Page *****/
+
+
+
+/***** Business Cards Page *****/
+
+    #bc {
+        width: 20%;
+        border: 1px solid #808080;
+    }
+
+    #bc-back {
+        width: 20%;
+        border: none;
+    }
+}
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
